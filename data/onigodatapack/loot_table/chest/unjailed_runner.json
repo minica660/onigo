@@ -1,0 +1,125 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "rolls": {"min": 1, "max": 2},
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:conduit",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 5,
+                  "animation": "none",
+                  "sound": "minecraft:entity.lightning_bolt.impact",
+                  "has_consume_particles": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "一発逆転?",
+                "color": "#ff97e5",
+                "italic": true
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "右クリック5秒で使用可能",
+                  "color": "#a7f5fb",
+                  "bold": false,
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_foot",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 1,
+                  "animation": "none",
+                  "sound": "minecraft:entity.experience_orb.pickup",
+                  "has_consume_particles": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "大ジャンプ",
+                "color": "#FFD700",
+                "italic": true
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "右クリック1秒で使用可能",
+                  "color": "#a7f5fb",
+                  "bold": false,
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "none",
+                  "sound": "minecraft:entity.experience_orb.pickup",
+                  "has_consume_particles": false,
+                  "on_consume_effects": []
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "瞬足",
+                "color": "#00ffff",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "右クリックで使用可能",
+                  "color": "#a7f5fb",
+                  "bold": true,
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
