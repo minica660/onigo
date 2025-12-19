@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "none",
+                  "sound": "minecraft:entity.experience_orb.pickup",
+                  "has_consume_particles": false
+                },
+                "minecraft:item_name": {
+                  "text": "瞬足",
+                  "italic": false,
+                  "color": "#00FFFF",
+                  "bold": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_foot",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "none",
+                  "sound": "minecraft:entity.experience_orb.pickup",
+                  "has_consume_particles": false
+                },
+                "minecraft:item_name": {
+                  "text": "大ジャンプ",
+                  "italic": false,
+                  "color": "#FFD700",
+                  "bold": true,
+                  "underline": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
