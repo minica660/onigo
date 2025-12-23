@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:beacon"
+    },
+    "title": {
+      "text": "発光阻止",
+      "color": "white"
+    },
+    "description": {
+      "text": "発光阻止ミッションをクリアした",
+      "color": "gold"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+   "parent": "onigodatapack:mission",
+  "criteria": {
+    "trigger_glowing_prevention": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
