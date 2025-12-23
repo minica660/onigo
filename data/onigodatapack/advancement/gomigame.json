@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:soul_sand"
+    },
+    "title": {
+      "text": "ゴミゲー",
+      "color": "dark_red",
+      "bold": true
+    },
+    "description": {
+      "text": "期待通りの結末。",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "onigodatapack:roll_or_died",
+  "criteria": {
+    "always_true": {
+      "trigger": "minecraft:impossible"
+    }
+}
+}
