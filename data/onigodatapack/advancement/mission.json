@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:command_block"
+    },
+    "title": {
+      "text": "ミッション",
+      "color": "#fed1ff"
+    },
+    "description": {
+      "text": "逃げ側のミッション"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "onigodatapack:onigo",
+  "criteria": {
+    "trigger_glowing_prevention": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
