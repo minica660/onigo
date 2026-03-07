@@ -56,8 +56,8 @@ effect give @a[team=demon] resistance infinite 2 true
 
 
 #ゲームルール
-    gamerule fallDamage false
-    gamerule doImmediateRespawn true
+    gamerule fall_damage false
+    gamerule immediate_respawn true
 
 #tag clear
     tag @a remove jailed_runner
@@ -88,3 +88,5 @@ effect give @a[team=demon] resistance infinite 2 true
 
 #function
     function onigodatapack:item
+
+
