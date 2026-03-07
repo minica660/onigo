@@ -20,8 +20,8 @@
 
         execute as @a[scores={click_conduit=1..}] at @s run particle minecraft:explosion_emitter ~ ~ ~ 1 1 1 0.1 50 normal
         execute as @a[scores={click_conduit=1..}] at @s run particle minecraft:end_rod ~ ~ ~ 0.5 0.5 0.5 0.05 30 normal
-        #この下の行のパーティクルは1.21.9にしたところ使えなくなったためカスタムパーティクル制作予定  
-            execute as @a[scores={click_conduit=1..}] at @s run particle minecraft:large_smoke ~ ~ ~ 0 0 0 0 1 normal
+        #修正によりこれはなし：この下の行のパーティクルは1.21.9にしたところ使えなくなったためカスタムパーティクル制作予定 
+            execute as @a[scores={click_conduit=1..}] at @s run particle minecraft:flash{color:[1.0, 1.0, 1.0, 1.0]} ~ ~1 ~ 0 0 0 0 1
         execute as @a[scores={click_conduit=1..}] run clear @s conduit 1
         execute as @a[scores={click_conduit=1..}] run scoreboard players set @s click_conduit 0
 
@@ -142,8 +142,7 @@
                 scoreboard players set _check_small_ mission_small 0
 
         #flash
-            #25行目で記述の通りフラッシュパーティクル一時避難パーティクルに変更
-            execute as @e[type=armor_stand,tag=small_marker] at @s run particle minecraft:large_smoke ~ ~ ~
+            execute as @e[type=armor_stand,tag=small_marker] at @s run particle minecraft:flash{color:[1.0, 1.0, 1.0, 1.0]} ~ ~1 ~ 0 0 0 0 1
         #small
             execute if score _mission_small_sub_ mission_small_sub matches 1.. run scoreboard players remove _mission_small_small_ mission_small_small 1
                 #制御
@@ -178,5 +177,6 @@
 
 #stamina
     function onigodatapack:xp
+
 
 
