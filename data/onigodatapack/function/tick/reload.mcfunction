@@ -75,12 +75,7 @@ say 現在onigodatapackが入っています
         scoreboard objectives add death_runner dummy "逃げ側死亡数"
 
 
-    #mission
-        scoreboard objectives add mission dummy
-            scoreboard objectives add mission_2 dummy "ミッション2成功の有無"
-        scoreboard objectives add mission_small dummy "感圧版チェック"
-        scoreboard objectives add mission_small_sub dummy "サイズ小さくサブ"
-        scoreboard objectives add mission_small_small dummy "サイズ小さく経過時間"
+
         
 
 
