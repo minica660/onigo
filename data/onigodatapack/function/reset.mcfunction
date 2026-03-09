@@ -19,9 +19,7 @@
             scoreboard objectives remove check_runner_jailed
             scoreboard objectives remove game_main
                 scoreboard objectives remove death_runner
-                    scoreboard objectives remove mission
-                    scoreboard objectives remove mission_2
-                    
+
 
 
 
@@ -63,4 +61,5 @@ title @a title "リセット"
     kill @e[type=interaction,tag=demon_spawnpoint]
     kill @e[type=interaction,tag=jail_spawnpoint]
     kill @e[type=interaction,tag=rip_rebound_spawn]
+
     
