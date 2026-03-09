@@ -132,32 +132,6 @@
     xp set @a 129 levels
 
 
-
-
-#ミッション
-    #mission_small
-        #感圧版２つ同時に押しているか検知
-            execute if score _check_small_ mission_small matches 2 run function onigodatapack:mission/small_small
-            #制御
-                scoreboard players set _check_small_ mission_small 0
-
-        #flash
-            execute as @e[type=armor_stand,tag=small_marker] at @s run particle minecraft:flash{color:[1.0, 1.0, 1.0, 1.0]} ~ ~1 ~ 0 0 0 0 1
-        #small
-            execute if score _mission_small_sub_ mission_small_sub matches 1.. run scoreboard players remove _mission_small_small_ mission_small_small 1
-                #制御
-                    execute if score _mission_small_small_ mission_small_small matches 0 as @a[team=runner] at @s run attribute @s minecraft:scale base set 1
-                    execute if score _mission_small_small_ mission_small_small matches 0 run scoreboard players set _mission_small_sub_ mission_small_sub 0
-                    execute if score _mission_small_small_ mission_small_small matches 0 run scoreboard players set _mission_small_small_ mission_small_small -1
-
-    #mission_unjailed
-        #slime_glowing
-            execute if score _mission_2_ mission_2 matches 1 run effect give @e[type=slime] glowing 1 0 true
-        #slime_invisibility
-            execute if score _mission_2_ mission_2 matches 1 run effect give @e[type=slime] invisibility 1 0 true
-
-
-
 #bossbar
     execute store result bossbar my:my_bossbar value run scoreboard players get 残り時間 game_main
     #bossbar color
